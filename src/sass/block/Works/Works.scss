@@ -1,0 +1,176 @@
+@import '../../base/variables.scss';
+
+.works {
+    margin-top: 80px;
+    .container {
+        position: relative;
+    }
+
+    .swiper-button-prev {
+        top: 45px;
+        right: 80px;
+        left: auto;
+
+        width: 54px;
+        height: 54px;
+        border-radius: 100%;
+        border: 1px solid #7C7C7C;
+        transition: 0.8s all;
+        background-color: #ffffff;
+        position: absolute;
+        &:hover {
+            background-color: #07D7E6;
+            border: 1px solid #ffffff;
+            &::before {
+                border: 2px solid #ffffff;
+                background-color: #ffffff;
+            }
+            &::after {
+                border: 2px solid #ffffff;
+                background-color: #ffffff;
+            }
+        }
+        &::before {
+            content: "";
+            transition: 0.8s all;
+            top: 64%;
+            left: 45%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            position: absolute;
+            width: 22px;
+            border: 2px solid #071E20;
+            border-radius: 20px;
+            height: 0px;
+            background-color: #071E20;
+            &:hover {
+
+            }
+        }
+        &::after {
+            content: "";
+            top: 36%;
+            left: 45%;
+            transition: 0.8s all;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            position: absolute;
+            width: 22px;
+            border: 2px solid #071E20;
+            border-radius: 20px;
+            height: 0px;
+            background-color: #071E20;
+        }
+
+    }
+
+    .swiper-button-next {
+        top: 45px;
+        right: 0;
+
+        width: 54px;
+        height: 54px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-radius: 100%;
+        border: 1px solid #7C7C7C;
+        transition: 0.8s all;
+        background-color: #ffffff;
+        position: absolute;
+        &:hover {
+            background-color: #07D7E6;
+            border: 1px solid #ffffff;
+            &::before {
+                border: 2px solid #ffffff;
+                background-color: #ffffff;
+            }
+            &::after {
+                border: 2px solid #ffffff;
+                background-color: #ffffff;
+            }
+        }
+        &::before {
+            content: "";
+            top: 64%;
+            left: 45%;
+            transition: 0.8s all;
+            transform: translate(-50%, -50%) rotate(45deg);
+            position: absolute;
+            width: 22px;
+            border: 2px solid #071E20;
+            border-radius: 20px;
+            height: 0px;
+            background-color: #071E20;
+        }
+        &::after {
+            content: "";
+            top: 36%;
+            left: 45%;
+            transition: 0.8s all;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            position: absolute;
+            width: 22px;
+            border: 2px solid #071E20;
+            border-radius: 20px;
+            height: 0px;
+            background-color: #071E20;
+        }
+    }
+    .work__slider  {
+        overflow: unset;
+        overflow-x: clip;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-pagination {
+            top: -6px;
+            display: flex;
+            justify-content: space-between;
+            z-index: -1;
+            .swiper-pagination-bullet {
+                width: 49% !important;
+                height: 3px !important;
+                background-color: #C7C7C7 !important;
+                border: none !important;
+                border-top: 0 !important;
+                border-bottom: 0 !important;
+                margin-bottom: -1rem !important;
+                margin-right: 0 !important;
+                margin-bottom: 0 !important;
+                margin-left: 0 !important;
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__wrapper {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        position: relative;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            column-gap: 65px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .works {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .works {
+        &__wrapper {
+            &_header {
+                column-gap: 0;
+                justify-content: space-between;
+            }
+        }
+    }
+}

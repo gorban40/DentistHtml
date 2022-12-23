@@ -1,0 +1,106 @@
+.price {
+    display: none;
+    margin-top: 30px;
+    position: relative;
+    &__border {
+        border-right: 3px solid #DEDEDE;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        div {
+            text-align: center;
+            border-right: 1px solid #DEDEDE;
+            &:nth-last-child(1) {
+                border: none;
+            }
+        }
+    }
+    &__title {
+        border: none;
+        background-color: #ffffff;
+        font-weight: 500;
+        font-size: 18px;
+        color: #003357;
+        transition: 0.5s all;
+        position: relative;
+        &::after {
+            content: '';
+            top: 90%;
+            height: 3px;
+            width: 0%;
+            left: 50%;
+            transform:translateX(-50%);
+            background-color:#07D7E6;
+            transition: 0.5s ease all .3s;
+            position: absolute;
+        }
+        &:hover {
+            &::after {
+                width: 50%;
+                transition: 0.3s ease all;
+            }
+        }
+    }
+    &__price {
+        border: none;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 20px;
+        color: #003357;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: 0.5s all;
+        &:hover {
+            color: maroon;
+        }
+        span {
+            position: absolute;
+            background-color: transparent;
+            font-weight: 400;
+            font-size: 16px;
+            color: gray;
+            text-decoration: line-through;
+            bottom: -16px;
+            left: 38%;
+            transition: 0.5s all;
+            &:hover {
+                color: maroon;
+            }
+        }
+    }
+    &__time {
+        border: none;
+        background-color: #ffffff;
+        font-weight: 500;
+        font-size: 18px;
+        color: #003357;
+        position: relative;
+        &::after {
+            content: '';
+            top: 90%;
+            height: 3px;
+            width: 0%;
+            left: 50%;
+            transform:translateX(-50%);
+            background-color:#07D7E6;
+            transition: 0.5s ease all .3s;
+            position: absolute;
+        }
+        &:hover {
+            &::after {
+                width: 15%;
+                transition: 0.3s ease all;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .price__border {
+        border-right: none;
+    }
+}

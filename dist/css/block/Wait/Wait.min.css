@@ -1,0 +1,1 @@
+.wait{margin-top:160px;min-height:500px}.wait__wrapper{margin-top:60px;-moz-column-gap:71px;column-gap:71px;height:100%;display:flex}.wait__map{width:100%}@media(max-width:1199px){.wait__wrapper{flex-direction:column-reverse}.wait__map{height:300px}.wait__form{margin:0 auto}}@media(max-width:767px){.wait{margin-top:100px}.wait__map{display:none}.wait h2{font-size:50px}}

@@ -1,0 +1,46 @@
+@import '../../base/variables.scss';
+ 
+.sliderDocuments{
+  .swiper-slide {
+    width: calc(100% / 3);
+    transition: all .25s ease-out;
+    opacity: 1;
+  }
+  .swiper-diploma {
+    overflow: unset;
+    overflow-x: clip;
+  }
+  .swiper-slide-active + .swiper-slide ~ .swiper-slide {
+    opacity: .35;
+  }
+  .swiper-slide {
+    opacity: .35;
+  }
+  
+  .swiper-slide img {
+    max-width: 100%;
+    transition: all .25s ease-out;
+    transform: scale(.75);
+    transform-origin: center;
+  }
+  
+  .swiper-slide-active img {
+    transform: scale(1);
+
+  }
+  .swiper-pagination-bullet {
+    bottom: -25px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: $main-color;
+    transition: 0.5s all;
+  }
+  .swiper-slide-active {
+    z-index: 11111;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+

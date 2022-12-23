@@ -1,0 +1,134 @@
+@import '../../base/variables.scss';
+
+.worry {
+    &__mobile {
+        display: none;
+    }
+    margin-top: 92px;
+    min-height: 580px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapper{
+        &_btn {
+            display: flex;
+            align-items: center;
+            column-gap: 64px;
+        }
+        &_title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 64px;
+        }
+        &_gray {
+            display: flex;
+            align-items: center;
+            column-gap: 12px
+        }
+    }
+    &__btn {
+        color: black;
+        width: 102px;
+        height: 44px;
+        border: 2px solid #071E20;
+        border-radius: 43px;
+        font-weight: 500;
+        font-size: 20px;
+        transition: 0.5s all;
+        &:hover {
+            color: #FFFFFF;
+            background: #071E20;
+        }
+        &_black {
+            background: #071E20;
+            color: #FFFFFF;
+            width: 147px;
+            &:hover {
+                color: #071E20;
+                background: #ffffff;
+            }
+        }
+    }
+    &__img {
+        width: 42px;
+        height: 42px;
+    }
+    .title_gray {
+        border: none;
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 1399px) {
+    .worry {
+        &__mobile {
+            display: flex;
+        }
+        &__desktop {
+            display: none;
+        }
+        min-height: auto;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 991px) {
+    .worry {
+        .title_gray {
+            font-size: 32px;
+        }
+        &__header {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__wrapper {
+            &_title {
+                justify-content: space-between;
+            }
+            &_btn {
+                margin-top: 10px;
+                display: grid;
+                grid-template-rows: 1fr;
+                width: 100%;
+            }
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .worry {
+        .title_gray {
+            font-size: 40px;
+        }
+        .arrow__btn {
+            width: 70px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .worry {
+        &__img {
+            display: none;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .worry {
+        &__wrapper {
+            &_title {
+                column-gap: 0;
+            }
+        }
+        .title {
+            font-size: 29px;
+        }
+        .title_gray {
+            font-size: 30px;
+        }
+    }
+}

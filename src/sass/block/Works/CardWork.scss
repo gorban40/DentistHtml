@@ -1,0 +1,110 @@
+@import '../../base/variables.scss';
+
+.cardWork {
+    width: 416px;
+    margin: 0 auto;
+    position: relative;
+    &__item {
+        .carousel-indicators {
+            margin-right: 0 !important;
+            margin-bottom: 0 !important;
+            margin-left: 0 !important;
+            justify-content: center;
+            column-gap: 20px;
+            position: relative;
+            padding-bottom: 3px;
+        }
+        .carousel-indicators button {
+            width: 50% !important;
+            height: 3px !important;
+            background-color: #C7C7C7 !important;
+            border: none !important;
+            border-top: 0 !important;
+            border-bottom: 0 !important;
+            margin-bottom: -1rem !important;
+            margin-right: 0 !important;
+            margin-bottom: 0 !important;
+            margin-left: 0 !important;
+        }
+        .carousel-indicators .active {
+            background-color: #071E20 !important;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+            div {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 142.69%;
+                color: #071E20;
+            }
+        }
+    }
+    &__img {
+        height: 270px;
+        width: 100%;
+        img {
+            object-fit: cover;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 142.69%;
+        letter-spacing: 0.025em;
+        text-transform: lowercase;
+        color: #071E20;
+        margin-top: 24px;
+        transition: 0.5s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__name {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.69%;
+        letter-spacing: 0.025em;
+        color: #071E20;
+        margin-top: 12px;
+        transition: 0.5s all;
+        &:hover {
+            color: $main-color;
+        }
+        span {
+            color: #7C7C7C;
+        }
+    }
+    &__job {
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.69%;
+        letter-spacing: 0.025em;
+        color: #071E20;
+        transition: 0.5s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .cardWork {
+        &__img {
+            height: auto;
+        }
+    }
+}
+@media (max-width: 460px) {
+    .cardWork {
+        width: auto;
+        &__img {
+            height: auto;
+        }
+    }
+}

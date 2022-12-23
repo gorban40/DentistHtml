@@ -1,0 +1,81 @@
+@import '../../base/variables.scss';
+
+.cardDoctor {
+    transition: 0.5s all;
+    &__name {
+        transition: 0.5s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__job {
+        transition: 0.5s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__categoria {
+        transition: 0.5s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__img {
+        width: 306px;
+        height: 363px;
+        img {
+            width: 306px;
+            height: 363px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 306px;
+        height: 560px;
+        transition: 0.7s all;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &_experience {
+            div {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 142.69%;
+            }
+        }
+        &_title {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            h3 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 170%;
+            }
+        }
+        &_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                transition: 0.5s all;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            a {
+                color: #071E20;
+                text-decoration: none;
+                transition: 0.5s all;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

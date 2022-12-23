@@ -1,0 +1,51 @@
+@import './base/index.scss';
+@import './base/btn.scss';
+@import './base/title.scss';
+
+@import "./block/App.scss";
+
+@import "./block/customElements/Btn.scss";
+@import './block/customElements/SocialNetworks.scss';
+@import './block/customElements/LoadingMessage.scss';
+
+@import './block/Diploma/Diploma.scss';
+@import "./block/Diploma/SliderDocuments.scss";
+@import "./block/Diploma/SliderPartner.scss";
+
+@import "./block/Doctors/CardDoctor.scss";
+@import "./block/Doctors/Doctors.scss";
+
+@import "./block/Footer/Footer.scss";
+
+@import './block/Menu/Menu.scss';
+
+@import "./block/ModalForm/ModalForm.scss";
+
+@import "./block/Overlay/Overlay.scss";
+
+@import "./block/Politic/Politic.scss";
+
+@import "./block/Promo/Contacts.scss";
+@import "./block/Promo/logo.scss";
+@import "./block/Promo/Promo.scss";
+@import "./block/Promo/Slider.scss";
+
+@import './block/Resualt/Accordion.scss';
+
+@import "./block/Standart/CardStandart.scss";
+@import "./block/Standart/Standart.scss";
+
+@import "./block/Wait/Form.scss";
+@import "./block/Wait/Wait.scss";
+
+@import "./block/Works/CardWork.scss";
+@import "./block/Works/Works.scss";
+
+@import "./block/Worry/Grid.scss";
+@import "./block/Worry/Price.scss";
+@import "./block/Worry/Worry.scss";
+
+@import './libs/aminated.css';
+@import './libs/bootstrap-reboot.min.css';
+
+@import './block/customElements/BtnSend.scss';

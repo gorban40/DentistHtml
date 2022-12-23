@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 142.69%;
+    color: #071E20;
+    transition: 0.5s all;
+    &_gray {
+        color: #7C7C7C;
+    }
+    &:hover {
+        color: darken($main-color, 15%);
+        transform: scale(1.05);
+    }
+}
+@media (max-width: 576px) {
+    .title {
+        font-size: 36px;
+    }
+}

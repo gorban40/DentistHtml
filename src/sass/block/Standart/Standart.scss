@@ -1,0 +1,17 @@
+.standart {
+    margin-top: 160px;
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 60px;
+        row-gap: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .standart {
+        margin-top: 60px;
+    }
+}

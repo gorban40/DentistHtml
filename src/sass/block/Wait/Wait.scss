@@ -1,0 +1,38 @@
+.wait {
+    margin-top: 160px;
+    min-height: 500px;
+    &__wrapper {
+        margin-top: 60px;
+        column-gap: 71px;
+        height: 100%;
+        display: flex;
+    }
+    &__map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .wait {
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+        &__map {
+            height: 300px;
+        }
+        &__form {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .wait {
+        margin-top: 100px;
+        &__map {
+            display: none;
+        }
+        h2 {
+            font-size: 50px;
+        }
+    }
+}

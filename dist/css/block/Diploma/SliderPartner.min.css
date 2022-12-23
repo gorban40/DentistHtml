@@ -1,0 +1,1 @@
+.sliderPartner .swiper-slide{width:33.3333333333%;transition:all .25s ease-out;opacity:1}.sliderPartner .swiper-slide-active+.swiper-slide~.swiper-slide{opacity:.35}.sliderPartner .swiper-slide img{max-width:100%;transition:all .25s ease-out;transform:scale(.75);transform-origin:center}.sliderPartner .swiper-slide-active img{transform:scale(1)}

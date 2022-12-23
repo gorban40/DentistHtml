@@ -1,0 +1,29 @@
+@import '../../base/variables.scss';
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    transition: 0.5s all;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &__img {
+        height: 100%;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 141.69%;
+        text-transform: lowercase;
+        color: #000000;
+        text-align: center;
+        span {
+            font-size: 50px;
+            color: $main-color;
+        }
+    }
+}

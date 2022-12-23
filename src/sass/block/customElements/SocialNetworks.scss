@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../font/icomoon.eot?f7v9y5');
+  src:  url('../../font/icomoon.eot?f7v9y5#iefix') format('embedded-opentype'),
+    url('../../font/icomoon.ttf?f7v9y5') format('truetype'),
+    url('../../font/icomoon.woff?f7v9y5') format('woff'),
+    url('../../font/icomoon.svg?f7v9y5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.socailNetwork {
+.social-networks {
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    margin-top: 20px;
+    li {
+      display: inline-block;
+    }
+  
+    a {
+      display: block;
+      position: relative;
+      margin: 0 7px;
+      width: 68px;
+      height: 68px;
+      font-size: 0;
+      line-height: 0;
+      text-align: center;
+      text-decoration: none;
+  
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        margin-top: -50%;
+        margin-left: -50%;
+        border-radius: 100px;
+        background-color: #1f2027;
+        transition: all 400ms;
+      }
+  
+      &:after {
+        position: relative;
+        display: block;
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: #fff;
+        font-size: 26px;
+        line-height: 66px;
+      }
+  
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+    
+    &.spin-icon a:hover:after, &.spin-icon a:focus:after {
+      transition: transform 0.4s ease-out;
+      transform: rotateZ(360deg);
+    }
+    
+    &.square a:hover:before, &.square a:focus:before {
+      border-radius: 0;
+    }
+    
+    &.bounce a:hover, &.bounce a:focus {
+      animation: bounce 1s;
+    }
+    
+    $networks: facebook '\ea90' #3b5998, instagram '\ea92' #E2A3C7, vimeo '\ea95' #1ab7ea;
+    
+    @each $network in $networks {
+       .icon-#{nth($network, 1)} {
+         &:after {
+           content: '#{nth($network, 2)}';
+        }
+  
+        &:hover:before, &:focus:before {
+          background: nth($network, 3);
+        }
+      }
+    }
+}
+  
+  @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transform: translate3d(0,0,0);
+    }
+  
+    40% {
+      transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, -6px, 0);
+    }
+  
+    70% {
+      transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transform: translate3d(0, -4px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0,-2px,0);
+    }
+  }
+}

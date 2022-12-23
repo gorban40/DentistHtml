@@ -1,0 +1,90 @@
+@import './variables.scss';
+
+.arrow__btn {
+    width: 54px;
+    height: 54px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 100%;
+    border: 1px solid #7C7C7C;
+    position: relative;
+    transition: 0.5s all;
+    background-color: #ffffff;
+    &:hover {
+        background-color: #07D7E6;
+        border: 2px solid #ffffff;
+        &::before {
+            content: "";
+            top: 64%;
+            left: 45%;
+            transform: translate(-50%,-50%) rotate(45deg);
+            position: absolute;
+            width: 22px;
+            border: 2px solid #ffff;
+            border-radius: 20px;
+            height: 0px;
+            background-color:#ffff;
+        }
+        &::after {
+            content: "";
+            top: 36%;
+            left: 45%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            position: absolute;
+            width: 22px;
+            border: 2px solid #ffff;
+            border-radius: 20px;
+            height: 0px;
+            background-color:#ffff;
+        }
+    }
+    &:after {
+        content: "";
+        top: 36%;
+        left: 45%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+        position: absolute;
+        width: 22px;
+        border: 2px solid #071E20;
+        border-radius: 20px;
+        height: 0px;
+        background-color:#071E20;
+    }
+    &::before {
+        content: "";
+        top: 64%;
+        left: 45%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        position: absolute;
+        width: 22px;
+        border: 2px solid #071E20;
+        border-radius: 20px;
+        height: 0px;
+        background-color:#071E20;
+    }
+}
+.button {
+    width: 141px;
+    height: 44px;
+    border: 2px solid #071E20;
+    border-radius: 32px;
+    background-color: #ffffff;
+    transition: 0.5s all;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    &:hover {
+        background-color: $main-color;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+    }
+    &_black {
+        background-color: #071E20;
+        color: #ffffff;
+        &:hover {
+            background-color: $main-color;
+            color: #ffff;
+            border: 2px solid #ffffff;
+        }
+    }
+}

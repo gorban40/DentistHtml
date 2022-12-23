@@ -1,0 +1,76 @@
+@import '../../base/variables.scss';
+
+.diploma {
+    margin-top: 160px;
+    .right {
+        border-right: 1px solid #EAEAEA;
+        padding-right: 10px;
+    }
+    .bottom {
+        border-bottom: 1px solid #EAEAEA;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__parther {
+        padding-top: 40px;
+    } 
+    &__title {
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 142.69%;
+        color: #071E20;
+        text-align: start;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 142.69%;
+        color: #071E20;
+        margin-top: 20px;
+        transition: 0.7s all;
+        &:hover {
+            color: darken($main-color, 15%);
+        }
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.69%;
+        letter-spacing: 0.025em;
+        color: #071E20;
+        transition: 1s all;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__item {
+        margin-top: 50px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__icon {
+        width: 84px;
+        width: 84px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .diploma {
+        .right {
+            display: none;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .diploma{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 576px) {
+    .diploma {
+        &__parther {
+            display: none;
+        }
+    }
+}

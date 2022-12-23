@@ -1,0 +1,24 @@
+@import '../../base/variables.scss';
+
+.doctors {
+    margin-top: 120px;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 180px;
+        align-items: center;
+        &_titel {
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 64px;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .doctors {
+        margin-top: 60px;
+    }
+}

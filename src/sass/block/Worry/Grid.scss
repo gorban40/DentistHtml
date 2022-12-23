@@ -1,0 +1,106 @@
+.grid {
+    margin-top: 11px;
+    .column {
+        border-left: 1px solid #DEDEDE;
+        &:nth-last-child(3) {
+            border: none
+        }
+        padding-bottom: 40px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 41px;
+        align-items: center;
+        .row {
+            width: 85%;
+        }
+    }
+    &__item {
+        display: flex;
+        column-gap: 38px;
+        align-items: center;
+        padding-top: 25px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 318px;
+        li {
+            list-style-type: none;
+            button {
+                border: none;
+                background-color: #ffffff;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 200%;
+                color: #003357;
+                transition: 0.5s all;
+                position: relative;
+                &::after {
+                    content: '';
+                    top: 90%;
+                    height: 2px;
+                    width: 0%;
+                    left: 0;
+                    background-color:#003357;
+                    transition: 0.9s ease all .3s;
+                    position: absolute;
+                }
+                &:hover {
+                    &::after {
+                        width: 100%;
+                        transition: 0.3s ease all;
+                    }
+                }
+            }
+        }
+        &_bottom {
+            padding-bottom: 31px;
+            border-bottom: 1px solid #DEDEDE;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        transition: 0.5s all;
+        &:hover {
+            color:#003357;
+        }
+    }
+    &__img {
+        height: 92px;
+        width: 90px;
+    }
+    &__accordion {
+        &__ul {
+            margin-top: 10px;
+            position: relative;
+        }
+        &__li {
+            padding-bottom: 15px;
+            &:nth-last-child(1) {
+                padding-bottom: 5px;
+            }
+            button {
+                border: none;
+                background-color: #ffffff;
+                font-weight: 400;
+                font-size: 16px;
+                color: #003357;
+            }
+        }
+        &__button {
+            background: #071E20;
+            border-radius: 32px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 142.69%;
+            color: #FFFFFF;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}

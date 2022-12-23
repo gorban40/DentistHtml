@@ -1,0 +1,44 @@
+@import '../../base/variables.scss';
+
+.promo {
+    padding-top: 30px;
+    position: relative;
+    &__burger {
+        display: none;
+        flex-direction: column;
+        row-gap: 5px;
+        border: none;
+        background-color: #ffffff;
+        span {
+            width: 20px;
+            height: 2px;
+            background-color: black;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        column-gap: 82px;
+        position: relative;
+        justify-content: center;
+        height: 140px;
+    }
+    &__main {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .promo {
+        &__burger {
+            display: flex;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .promo {
+        &__menu {
+            column-gap: 0;
+        }
+    }   
+}
